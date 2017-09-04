@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bitcoin-wallet.iml" filepath="$PROJECT_DIR$/bitcoin-wallet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bitcoin-wallet-console/bitcoin-wallet-console.iml" filepath="$PROJECT_DIR$/bitcoin-wallet-console/bitcoin-wallet-console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bitcoin-wallet-core/bitcoin-wallet-core.iml" filepath="$PROJECT_DIR$/bitcoin-wallet-core/bitcoin-wallet-core.iml" />
+    </modules>
+  </component>
+</project>
