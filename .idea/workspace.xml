@@ -1,270 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c126d686-cc0f-42af-953b-cd86e25caa1e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/resources/bitherj.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../core/libs/bitherj.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitcoin-wallet-console/bitcoin-wallet-console.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitcoin-wallet-console/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/bitcoin-wallet-core.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/ByteArrayUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/CalculateAddressUseCase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/UseCase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/to/PrivateKeyBag.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitcoin-wallet.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../console/src/main/java/com/ahmadsaleh/bitcoinkeys/console/processors/CalculateAddressCommandProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../core/src/main/java/com/ahmadsaleh/bitcoinkeys/ByteArrayUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../core/src/main/java/com/ahmadsaleh/bitcoinkeys/ECDSAEncryptionUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../core/src/main/java/com/ahmadsaleh/bitcoinkeys/HashingUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../core/src/main/java/com/ahmadsaleh/bitcoinkeys/KeysConversionUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/CalculateAddressUseCase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/UseCase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/to/PrivateKeyBag.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../core/src/main/java/com/ahmadsaleh/bitcoinkeys/writer/BitcoinAddressWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../core/src/main/java/com/ahmadsaleh/bitcoinkeys/writer/WalletImportFormatWriter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../core/src/main/resources/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../core/src/test/groovy/com/ahmadsaleh/bitcoinkeys/console/processors/CalculateAddressCommandProcessorTest.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/AbstractApp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/BitherjSettings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/ISetting.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/NotificationService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/BitherErrorApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/BitherMytransactionsApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/BitherTrustManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/BlockChainDownloadSpvApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/BlockChainGetLatestBlockApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/BlockChainMytransactionsApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/ConnectHttps.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/CookieFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/CreateHDMAddressApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/DownloadFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/DownloadSpvApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/GetBlockCountApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/GetCookieApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/GetExchangeDepthApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/GetExchangeTickerApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/GetExchangeTrendApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/GetHDMBIdRandomApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/GetInSignaturesApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/GetKlineApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/PushTxThirdParty.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/RecoveryHDMApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/SignatureHDMApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/TrustCert.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/UploadAvatarApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/UploadHDMBidApi.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/BaseHttpResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/BaseHttpsResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/BitherUrl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/Http400Exception.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/Http404Exception.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/Http500Exception.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/HttpAuthException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/HttpException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/HttpGetResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/HttpNoConnectException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/HttpPostResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/HttpRefusedException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/HttpRequestException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/HttpServerException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/HttpSetting.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/HttpsGetResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/api/http/HttpsPostResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/AbstractHD.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/Address.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/AddressManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/Block.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/BlockChain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/BloomFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/DesktopHDMAddress.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/DesktopHDMKeychain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/EnterpriseHDMAddress.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/EnterpriseHDMKeychain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/EnterpriseHDMSeed.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/EnterpriseHDMTxSignaturePool.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/HDAccount.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/HDAccountCold.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/HDMAddress.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/HDMBId.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/HDMKeychain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/In.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/Out.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/OutPoint.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/Peer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/PeerManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/Tx.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/TxBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/UnSignTransaction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/core/Version.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/DumpedPrivateKey.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/ECKey.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/EncryptedData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/EncryptedPrivateKey.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/KeyCrypter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/KeyCrypterException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/KeyCrypterScrypt.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/NativeSecp256k1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/PasswordSeed.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/SecureCharSequence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/TransactionSignature.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/bip38/Bip38.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/bip38/Rijndael.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/hd/ChildNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/hd/DeterministicKey.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/hd/HDDerivationException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/hd/HDKeyDerivation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/hd/HDUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/mnemonic/MnemonicCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/mnemonic/MnemonicException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/mnemonic/PBKDF2SHA512.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/AbstractDb.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/IAddressProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/IBlockProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/IDesktopAddressProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/IDesktopTxProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/IEnterpriseHDMProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/IHDAccountAddressProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/IHDAccountProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/IPeerProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/ITxProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/imp/AbstractAddressProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/imp/AbstractBlockProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/imp/AbstractHDAccountAddressProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/imp/AbstractHDAccountProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/imp/AbstractPeerProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/imp/AbstractProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/imp/AbstractTxProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/imp/base/ICursor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/imp/base/IDb.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/db/imp/base/IProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/delegate/HDMHotAdd.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/delegate/HDMSingular.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/delegate/IPasswordGetter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/delegate/IPasswordGetterDelegate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/exception/AddressFormatException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/exception/BlockStoreException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/exception/PasswordException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/exception/ProtocolException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/exception/ScriptException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/exception/TxBuilderException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/exception/VerificationException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/factory/ImportHDSeed.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/factory/ImportPrivateKey.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/AddressMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/AlertMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/BitcoinSerializer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/BlockMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/ChildMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/EmptyMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/FilteredBlockMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/GetAddrMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/GetBlocksMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/GetDataMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/GetHeadersMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/HeadersMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/InventoryMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/ListMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/MemoryPoolMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/Message.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/NotFoundMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/PartialMerkleTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/PeerAddress.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/PingMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/PongMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/RejectMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/UnknownMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/VersionAck.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/message/VersionMessage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/net/AbstractTimeoutHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/net/ClientConnectionManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/net/ConnectionHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/net/MessageWriteTarget.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/net/NioClientManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/net/PeerSocketHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/net/StreamParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/qrcode/QRCodeEnodeUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/qrcode/QRCodeTransportPage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/qrcode/QRCodeTxTransport.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/qrcode/QRCodeUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/qrcode/SaltForQRCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/runnable/EditPasswordThread.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/script/Script.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/script/ScriptBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/script/ScriptChunk.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/script/ScriptOpCodes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/Base64.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/BlockUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/CharSequenceUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/DnsDiscovery.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/DynamicWire.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/GenericUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/InventoryItem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/PrivateKeyUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/Sha256Hash.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/Threading.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/TransactionsUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/UnitUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/UnsafeByteArrayOutputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/UpgradeAddressUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/Utils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/VarInt.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/core/AddressTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/core/BlockTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/core/HDMIdTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/core/MultisigAddressTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/core/PeerManagerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/core/StringTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/core/TestImplAbstractApp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/core/TxTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/core/UtilsTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/core/https/HttpsTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/crypto/Bip38Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/crypto/ECKeyTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/crypto/KeyCrypterScryptTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/crypto/MultisigTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/crypto/PasswordSeedTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/crypto/hd/HDDerivationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/crypto/mnemonic/MnemonicCodeTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/script/ScriptChunkTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/java/net/bither/bitherj/script/ScriptTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/resources/net/bither/bitherj/core/https/bithertruststore.jks" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/resources/net/bither/bitherj/crypto/mnemonic/wordlist/english.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/resources/net/bither/bitherj/script/script_invalid.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/resources/net/bither/bitherj/script/script_valid.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/resources/net/bither/bitherj/script/tx_invalid.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../bitherj/src/test/resources/net/bither/bitherj/script/tx_valid.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/ByteArrayUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/console/processors/CalculateAddressCommandProcessor.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/crypto/bip38/Bip38Util.java" afterPath="$PROJECT_DIR$/../core/src/main/java/com/ahmadsaleh/bitcoinkeys/Base58.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../bitherj/src/main/java/net/bither/bitherj/utils/Base58.java" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/Base58.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/ECDSAEncryptionUtils.java" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/ECDSAEncryptionUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/HashingUtils.java" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/HashingUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/KeysConversionUtils.java" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/KeysConversionUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/console/CommandOption.java" afterPath="$PROJECT_DIR$/../console/src/main/java/com/ahmadsaleh/bitcoinkeys/console/CommandOption.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/console/CommandProcessor.java" afterPath="$PROJECT_DIR$/../console/src/main/java/com/ahmadsaleh/bitcoinkeys/console/CommandProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/console/CommandProcessorFactory.java" afterPath="$PROJECT_DIR$/../console/src/main/java/com/ahmadsaleh/bitcoinkeys/console/CommandProcessorFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/console/ConsoleUtils.java" afterPath="$PROJECT_DIR$/../console/src/main/java/com/ahmadsaleh/bitcoinkeys/console/ConsoleUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/console/Main.java" afterPath="$PROJECT_DIR$/../console/src/main/java/com/ahmadsaleh/bitcoinkeys/console/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/console/processors/DecryptCommandProcessor.java" afterPath="$PROJECT_DIR$/../console/src/main/java/com/ahmadsaleh/bitcoinkeys/console/processors/DecryptCommandProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/console/processors/EmptyCommandProcessor.java" afterPath="$PROJECT_DIR$/../console/src/main/java/com/ahmadsaleh/bitcoinkeys/console/processors/EmptyCommandProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/console/processors/ExitCommandProcessor.java" afterPath="$PROJECT_DIR$/../console/src/main/java/com/ahmadsaleh/bitcoinkeys/console/processors/ExitCommandProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/console/processors/GenerateCommandProcessor.java" afterPath="$PROJECT_DIR$/../console/src/main/java/com/ahmadsaleh/bitcoinkeys/console/processors/GenerateCommandProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/console/processors/UnrecognizedCommadProcessor.java" afterPath="$PROJECT_DIR$/../console/src/main/java/com/ahmadsaleh/bitcoinkeys/console/processors/UnrecognizedCommadProcessor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/writer/BitcoinAddressWriter.java" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/writer/BitcoinAddressWriter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/java/com/ahmadsaleh/bitcoinkeys/writer/WalletImportFormatWriter.java" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/writer/WalletImportFormatWriter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/main/resources/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/../console/src/main/resources/META-INF/MANIFEST.MF" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/test/groovy/com/ahmadsaleh/bitcoinkeys/BitcoinAddressWriterTest.groovy" afterPath="$PROJECT_DIR$/../core/src/test/groovy/com/ahmadsaleh/bitcoinkeys/writer/BitcoinAddressWriterTest.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/test/groovy/com/ahmadsaleh/bitcoinkeys/ECDSAEncryptionUtilsTest.groovy" afterPath="$PROJECT_DIR$/../core/src/test/groovy/com/ahmadsaleh/bitcoinkeys/ECDSAEncryptionUtilsTest.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../src/test/groovy/com/ahmadsaleh/bitcoinkeys/WalletImportFormatWriterTest.groovy" afterPath="$PROJECT_DIR$/../core/src/test/groovy/com/ahmadsaleh/bitcoinkeys/writer/WalletImportFormatWriterTest.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/4.0.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/../.gradle/4.0.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/4.0.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/../.gradle/4.0.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/cache.properties" afterPath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/cache.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../build.gradle" afterPath="$PROJECT_DIR$/../build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../settings.gradle" afterPath="$PROJECT_DIR$/../settings.gradle" />
-    </list>
+    <list default="true" id="c126d686-cc0f-42af-953b-cd86e25caa1e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/bitcoin-wallet-core/target/" />
@@ -311,6 +48,12 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="75" />
+    <option name="y" value="16" />
+    <option name="width" value="1281" />
+    <option name="height" value="732" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -329,6 +72,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,9 +84,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -353,6 +96,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.44712645" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bitherj" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -495,6 +240,7 @@
       <option name="presentableId" value="Default" />
       <updated>1504547519915</updated>
       <workItem from="1504547522541" duration="2214000" />
+      <workItem from="1504550465964" duration="47000" />
     </task>
     <servers />
   </component>
@@ -516,38 +262,38 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2214000" />
+    <option name="totallyTimeSpent" value="2261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32784432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,6 +301,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -565,7 +316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -573,31 +323,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitcoin-wallet-core/src/test/java/bitcoinkeys/writer/BitcoinAddressWriterTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitcoin-wallet-core/src/test/java/com/ahmadsaleh/bitcoinkeys/ECDSAEncryptionUtilsTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1419">
-          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bitcoin-wallet-core/src/test/java/bitcoinkeys/writer/BitcoinAddressWriterTest.groovy" />
+    <entry file="file://$PROJECT_DIR$/bitcoin-wallet-core/src/test/java/com/ahmadsaleh/bitcoinkeys/ECDSAEncryptionUtilsTest.groovy" />
     <entry file="file://$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/CalculateAddressUseCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -605,7 +339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -613,7 +346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -621,7 +353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,9 +360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -639,7 +367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -655,7 +382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,7 +396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,7 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1382">
           <caret line="81" column="39" lean-forward="false" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,7 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
