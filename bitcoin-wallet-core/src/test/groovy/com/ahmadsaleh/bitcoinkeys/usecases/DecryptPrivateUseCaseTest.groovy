@@ -1,12 +1,11 @@
-package com.ahmadsaleh.bitcoinkeys.console.processors
+package com.ahmadsaleh.bitcoinkeys.usecases
 
-import com.ahmadsaleh.bitcoinkeys.usecases.CalculateAddressUseCase
 import com.ahmadsaleh.bitcoinkeys.usecases.to.PrivateKeyBag
 import net.bither.bitherj.crypto.SecureCharSequence
 import spock.lang.Specification
 import spock.lang.Unroll
 
-class CalculateAddressCommandProcessorTest extends Specification {
+class CalculateAddressUseCaseTest extends Specification{
 
     @Unroll
     def "given a private key, when calculating public address, then return correct address"() {
