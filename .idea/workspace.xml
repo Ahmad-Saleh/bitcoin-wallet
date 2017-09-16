@@ -1,50 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c126d686-cc0f-42af-953b-cd86e25caa1e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/bitcoin-wallet-core-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/bitherj.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/Base58$AddressFormatException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/Base58.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/ByteArrayUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/ECDSAEncryptionUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/HashingUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/KeysConversionUtils$KeyConversionException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/KeysConversionUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/usecases/CalculateAddressUseCase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/usecases/UseCase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/usecases/to/PrivateKeyBag$Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/usecases/to/PrivateKeyBag.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/writer/BitcoinAddressWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/classes/com/ahmadsaleh/bitcoinkeys/writer/WalletImportFormatWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/surefire-reports/TEST-com.ahmadsaleh.bitcoinkeys.ECDSAEncryptionUtilsTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/surefire-reports/TEST-com.ahmadsaleh.bitcoinkeys.console.processors.CalculateAddressCommandProcessorTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/surefire-reports/TEST-com.ahmadsaleh.bitcoinkeys.writer.BitcoinAddressWriterTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/surefire-reports/TEST-com.ahmadsaleh.bitcoinkeys.writer.WalletImportFormatWriterTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/surefire-reports/com.ahmadsaleh.bitcoinkeys.ECDSAEncryptionUtilsTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/surefire-reports/com.ahmadsaleh.bitcoinkeys.console.processors.CalculateAddressCommandProcessorTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/surefire-reports/com.ahmadsaleh.bitcoinkeys.writer.BitcoinAddressWriterTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/surefire-reports/com.ahmadsaleh.bitcoinkeys.writer.WalletImportFormatWriterTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/test-classes/com/ahmadsaleh/bitcoinkeys/ECDSAEncryptionUtilsTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/test-classes/com/ahmadsaleh/bitcoinkeys/console/processors/CalculateAddressCommandProcessorTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/test-classes/com/ahmadsaleh/bitcoinkeys/writer/BitcoinAddressWriterTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/target/test-classes/com/ahmadsaleh/bitcoinkeys/writer/WalletImportFormatWriterTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/CalculateAddressUseCase.java" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/CalculateAddressUseCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/DecryptPrivateUseCase.java" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/DecryptPrivateUseCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/GenerateKeysUseCase.java" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/GenerateKeysUseCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/to/BitcoinKeyPair.java" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/to/BitcoinKeyPair.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/to/PrivateKeyBag.java" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/main/java/com/ahmadsaleh/bitcoinkeys/usecases/to/PrivateKeyBag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/src/test/groovy/com/ahmadsaleh/bitcoinkeys/usecases/CalculateAddressUseCaseTest.groovy" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/test/groovy/com/ahmadsaleh/bitcoinkeys/usecases/CalculateAddressUseCaseTest.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/src/test/groovy/com/ahmadsaleh/bitcoinkeys/usecases/DecryptPrivateUseCaseTest.groovy" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/test/groovy/com/ahmadsaleh/bitcoinkeys/usecases/DecryptPrivateUseCaseTest.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitcoin-wallet-core/src/test/groovy/com/ahmadsaleh/bitcoinkeys/usecases/GenerateKeysUseCaseTest.groovy" afterPath="$PROJECT_DIR$/bitcoin-wallet-core/src/test/groovy/com/ahmadsaleh/bitcoinkeys/usecases/GenerateKeysUseCaseTest.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-    </list>
+    <list default="true" id="c126d686-cc0f-42af-953b-cd86e25caa1e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/bitcoin-wallet-core/target/" />
@@ -510,7 +467,7 @@
       <workItem from="1504547522541" duration="2214000" />
       <workItem from="1504550465964" duration="47000" />
       <workItem from="1505287722987" duration="4229000" />
-      <workItem from="1505560849797" duration="5010000" />
+      <workItem from="1505560849797" duration="5054000" />
     </task>
     <servers />
   </component>
@@ -547,7 +504,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11500000" />
+    <option name="totallyTimeSpent" value="11544000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="75" y="16" width="1303" height="780" extended-state="6" />
