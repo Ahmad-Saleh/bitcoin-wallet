@@ -4,6 +4,7 @@ import com.ahmadsaleh.bitcoinkeys.console.CommandOption;
 import com.ahmadsaleh.bitcoinkeys.console.CommandProcessor;
 import com.ahmadsaleh.bitcoinkeys.console.ConsoleUtils;
 import com.ahmadsaleh.bitcoinkeys.usecases.CalculateAddressUseCase;
+import com.ahmadsaleh.bitcoinkeys.usecases.DecryptPrivateUseCase;
 import com.ahmadsaleh.bitcoinkeys.usecases.to.PrivateKeyBag;
 import net.bither.bitherj.crypto.SecureCharSequence;
 
@@ -23,14 +24,15 @@ public class CalculateAddressCommandProcessor implements CommandProcessor {
             return;
         }
 
-        CharSequence password = ConsoleUtils.requestPassword();
-        CalculateAddressUseCase calculateAddressUseCase = new CalculateAddressUseCase();
-        String publicAddress = calculateAddressUseCase.exeute(
-                new PrivateKeyBag.Builder()
-                .encryptedPrivateKey(keyOption.getArguments())
-                .password(new SecureCharSequence(password)).build());
+        try {
+            CharSequence password = ConsoleUtils.requestPassword();
+            PrivateKeyBag privateKeyBag = new PrivateKeyBag(keyOption.getArguments(), new SecureCharSequence(password));
+            String publicAddress = new CalculateAddressUseCase().exeute(privateKeyBag);
 
-        System.out.printf("address: %s\n", publicAddress);
+            System.out.printf("address: %s\n", publicAddress);
+        } catch (DecryptPrivateUseCase.DecryptionFailureException e) {
+            System.err.println("failed to decrypt key. Key and/or password are invalid");
+        }
     }
 
     @Override
