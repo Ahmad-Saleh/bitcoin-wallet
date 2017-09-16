@@ -6,7 +6,6 @@ import com.ahmadsaleh.bitcoinkeys.console.ConsoleUtils;
 import com.ahmadsaleh.bitcoinkeys.usecases.CalculateAddressUseCase;
 import com.ahmadsaleh.bitcoinkeys.usecases.DecryptPrivateUseCase;
 import com.ahmadsaleh.bitcoinkeys.usecases.to.PrivateKeyBag;
-import net.bither.bitherj.crypto.SecureCharSequence;
 
 import java.util.List;
 
@@ -25,8 +24,8 @@ public class CalculateAddressCommandProcessor implements CommandProcessor {
         }
 
         try {
-            CharSequence password = ConsoleUtils.requestPassword();
-            PrivateKeyBag privateKeyBag = new PrivateKeyBag(keyOption.getArguments(), new SecureCharSequence(password));
+            char[] password = ConsoleUtils.requestPassword();
+            PrivateKeyBag privateKeyBag = new PrivateKeyBag(keyOption.getArguments(), password);
             String publicAddress = new CalculateAddressUseCase().exeute(privateKeyBag);
 
             System.out.printf("address: %s\n", publicAddress);

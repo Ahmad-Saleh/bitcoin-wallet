@@ -1,6 +1,9 @@
 package com.ahmadsaleh.bitcoinkeys;
 
 import java.math.BigInteger;
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
+import java.nio.charset.Charset;
 import java.util.Arrays;
 
 /**
@@ -41,6 +44,16 @@ public final class ByteArrayUtils {
         int start = (biBytes.length == numBytes + 1) ? 1 : 0;
         int length = Math.min(biBytes.length, numBytes);
         System.arraycopy(biBytes, start, bytes, numBytes - length, length);
+        return bytes;
+    }
+
+    public static byte[] toBytes(char[] chars) {
+        CharBuffer charBuffer = CharBuffer.wrap(chars);
+        ByteBuffer byteBuffer = Charset.forName("UTF-8").encode(charBuffer);
+        byte[] bytes = Arrays.copyOfRange(byteBuffer.array(),
+                byteBuffer.position(), byteBuffer.limit());
+        Arrays.fill(charBuffer.array(), '\u0000'); // clear sensitive data
+        Arrays.fill(byteBuffer.array(), (byte) 0); // clear sensitive data
         return bytes;
     }
 }

@@ -1,7 +1,7 @@
 package com.ahmadsaleh.bitcoinkeys.writer;
 
-import com.ahmadsaleh.bitcoinkeys.Base58;
 import com.ahmadsaleh.bitcoinkeys.KeysConversionUtils;
+import org.bitcoinj.core.Base58;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

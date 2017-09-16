@@ -1,12 +1,11 @@
 package com.ahmadsaleh.bitcoinkeys.console;
 
-import net.bither.bitherj.crypto.SecureCharSequence;
 
 import java.util.Arrays;
 
 public class ConsoleUtils {
 
-    public static CharSequence requestNewPassword() {
+    public static char[] requestNewPassword() {
         char[] password;
         char[] passwordConfirm;
         do {
@@ -16,10 +15,10 @@ public class ConsoleUtils {
                 System.err.println("Password and confirmation do not match!");
             }
         } while (!Arrays.equals(password, passwordConfirm));
-        return new SecureCharSequence(password);
+        return password;
     }
 
-    public static CharSequence requestPassword() {
-        return new SecureCharSequence(System.console().readPassword("Enter password: "));
+    public static char[] requestPassword() {
+        return System.console().readPassword("Enter password: ");
     }
 }

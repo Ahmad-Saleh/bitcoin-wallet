@@ -1,7 +1,6 @@
 package com.ahmadsaleh.bitcoinkeys.usecases
 
 import com.ahmadsaleh.bitcoinkeys.usecases.to.PrivateKeyBag
-import net.bither.bitherj.crypto.SecureCharSequence
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -15,25 +14,25 @@ class GenerateKeysUseCaseTest extends Specification {
         def generateKeysUseCase = new GenerateKeysUseCase()
 
         when:
-        def bitcoinKeyPair = generateKeysUseCase.exeute(password)
+        def bitcoinKeyPair = generateKeysUseCase.exeute(password.toCharArray())
 
-        def calculatedPublic = new CalculateAddressUseCase().exeute(new PrivateKeyBag(bitcoinKeyPair.getEncryptedPrivate(), password))
+        def calculatedPublic = new CalculateAddressUseCase().exeute(new PrivateKeyBag(bitcoinKeyPair.getEncryptedPrivate(), password.toCharArray()))
         then:
         calculatedPublic.equals bitcoinKeyPair.publicBitcoinAddress
 
         where:
-        password << [new SecureCharSequence("this is a password")
-                     , new SecureCharSequence("12njMM")
-                     , new SecureCharSequence("arwa")
-                     , new SecureCharSequence("P@ssw0rd")
+        password << ["this is a password"
+                     , "12njMM"
+                     , "arwa"
+                     , "P@ssw0rd"
                      , generateRandomPassword()
                      , generateRandomPassword()
                      , generateRandomPassword()]
     }
 
-    SecureCharSequence generateRandomPassword() {
+    String generateRandomPassword() {
         def bytes = new byte[20]
         new SecureRandom().nextBytes(bytes)
-        new SecureCharSequence(new String(bytes, "UTF-8"))
+        new String(bytes, "UTF-8")
     }
 }

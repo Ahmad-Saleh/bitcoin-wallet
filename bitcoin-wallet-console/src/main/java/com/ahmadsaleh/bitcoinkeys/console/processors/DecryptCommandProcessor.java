@@ -5,7 +5,6 @@ import com.ahmadsaleh.bitcoinkeys.console.CommandProcessor;
 import com.ahmadsaleh.bitcoinkeys.console.ConsoleUtils;
 import com.ahmadsaleh.bitcoinkeys.usecases.DecryptPrivateUseCase;
 import com.ahmadsaleh.bitcoinkeys.usecases.to.PrivateKeyBag;
-import net.bither.bitherj.crypto.SecureCharSequence;
 
 import java.util.List;
 
@@ -23,9 +22,9 @@ public class DecryptCommandProcessor implements CommandProcessor {
         }
 
         try {
-            CharSequence password = ConsoleUtils.requestPassword();
+            char[] password = ConsoleUtils.requestPassword();
 
-            PrivateKeyBag privateKeyBag = new PrivateKeyBag(keyOption.getArguments(), new SecureCharSequence(password));
+            PrivateKeyBag privateKeyBag = new PrivateKeyBag(keyOption.getArguments(), password);
             System.out.printf("private key: %s", new DecryptPrivateUseCase().exeute(privateKeyBag));
         } catch (DecryptPrivateUseCase.DecryptionFailureException e) {
             System.err.println("failed to decrypt key. Key and/or password are invalid");

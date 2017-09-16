@@ -36,11 +36,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>bitherj</groupId>
-            <artifactId>bitherj</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/bitherj.jar</systemPath>
+            <groupId>org.bitcoinj</groupId>
+            <artifactId>bitcoinj-core</artifactId>
+            <version>0.12</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>

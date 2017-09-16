@@ -1,13 +1,11 @@
 package com.ahmadsaleh.bitcoinkeys.usecases.to;
 
-import net.bither.bitherj.crypto.SecureCharSequence;
-
 public class PrivateKeyBag {
 
     private String encryptedPrivateKey;
-    private SecureCharSequence password;
+    private char[] password;
 
-    public PrivateKeyBag(String encryptedPrivateKey, SecureCharSequence password) {
+    public PrivateKeyBag(String encryptedPrivateKey, char[] password) {
         this.encryptedPrivateKey = encryptedPrivateKey;
         this.password = password;
     }
@@ -20,11 +18,11 @@ public class PrivateKeyBag {
         this.encryptedPrivateKey = encryptedPrivateKey;
     }
 
-    public SecureCharSequence getPassword() {
+    public char[] getPassword() {
         return password;
     }
 
-    public void setPassword(SecureCharSequence password) {
+    public void setPassword(char[] password) {
         this.password = password;
     }
 
