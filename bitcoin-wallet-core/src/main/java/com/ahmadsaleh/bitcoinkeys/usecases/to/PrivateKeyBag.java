@@ -7,6 +7,11 @@ public class PrivateKeyBag {
     private String encryptedPrivateKey;
     private SecureCharSequence password;
 
+    public PrivateKeyBag(String encryptedPrivateKey, SecureCharSequence password) {
+        this.encryptedPrivateKey = encryptedPrivateKey;
+        this.password = password;
+    }
+
     public String getEncryptedPrivateKey() {
         return encryptedPrivateKey;
     }
@@ -23,26 +28,5 @@ public class PrivateKeyBag {
         this.password = password;
     }
 
-    public static class Builder {
 
-        private String encryptedPrivateKey;
-        private SecureCharSequence password;
-
-        public Builder encryptedPrivateKey(String encryptedPrivateKey) {
-            this.encryptedPrivateKey = encryptedPrivateKey;
-            return this;
-        }
-
-        public Builder password(SecureCharSequence password) {
-            this.password = password;
-            return this;
-        }
-
-        public PrivateKeyBag build() {
-            PrivateKeyBag privateKeyBag = new PrivateKeyBag();
-            privateKeyBag.setEncryptedPrivateKey(encryptedPrivateKey);
-            privateKeyBag.setPassword(password);
-            return privateKeyBag;
-        }
-    }
 }

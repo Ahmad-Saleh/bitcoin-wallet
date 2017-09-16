@@ -5,7 +5,7 @@ import net.bither.bitherj.crypto.SecureCharSequence;
 import net.bither.bitherj.crypto.bip38.Bip38;
 import net.bither.bitherj.exception.AddressFormatException;
 
-public class DecryptUseCase implements UseCase<PrivateKeyBag, SecureCharSequence> {
+public class DecryptPrivateUseCase implements UseCase<PrivateKeyBag, SecureCharSequence> {
 
     @Override
     public SecureCharSequence exeute(PrivateKeyBag privateKeyBag) {

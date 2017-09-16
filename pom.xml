@@ -11,6 +11,7 @@
     <modules>
         <module>bitcoin-wallet-core</module>
         <module>bitcoin-wallet-console</module>
+        <module>bitcoin-wallet-usecases</module>
     </modules>
 
 
