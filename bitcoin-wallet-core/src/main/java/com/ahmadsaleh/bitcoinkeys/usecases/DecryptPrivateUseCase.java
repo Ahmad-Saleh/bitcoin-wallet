@@ -11,6 +11,10 @@ public class DecryptPrivateUseCase implements UseCase<PrivateKeyBag, char[]> {
     @Override
     public char[] exeute(PrivateKeyBag privateKeyBag) {
         try {
+            /**
+             * bitcoinj uses Strings for passphrases, which is a security risk
+             * (see https://github.com/bitcoinj/bitcoinj/issues/1456)
+             */
             BIP38PrivateKey bip38PrivateKey = new BIP38PrivateKey(MainNetParams.get(), privateKeyBag.getEncryptedPrivateKey());
             ECKey ecKey = bip38PrivateKey.decrypt(new String(privateKeyBag.getPassword()));
             return ecKey.getPrivateKeyEncoded(MainNetParams.get()).toString().toCharArray();

@@ -2,6 +2,7 @@ package com.ahmadsaleh.bitcoinkeys.console;
 
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ConsoleUtils {
 
@@ -9,8 +10,8 @@ public class ConsoleUtils {
         char[] password;
         char[] passwordConfirm;
         do {
-            password = System.console().readPassword("Enter password: ");
-            passwordConfirm = System.console().readPassword("Confirm password: ");
+            password = readPassword("Enter password: ");
+            passwordConfirm = readPassword("Confirm password: ");
             if (!Arrays.equals(password, passwordConfirm)) {
                 System.err.println("Password and confirmation do not match!");
             }
@@ -19,6 +20,15 @@ public class ConsoleUtils {
     }
 
     public static char[] requestPassword() {
-        return System.console().readPassword("Enter password: ");
+        return readPassword("Enter password: ");
+    }
+
+    private static char[] readPassword(String message) {
+        if (System.console() == null) {
+            System.out.println(message + " (password will be visible)");
+            return new Scanner(System.in).nextLine().toCharArray();
+        } else {
+            return System.console().readPassword(message);
+        }
     }
 }

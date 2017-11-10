@@ -22,18 +22,13 @@ public final class ByteArrayUtils {
         return result;
     }
 
-    public static byte[] copyOfRange(byte[] data, int from, int to){
+    public static byte[] copyOfRange(byte[] data, int from, int to) {
         return Arrays.copyOfRange(data, from, to);
     }
 
     /**
      * The regular {@link BigInteger#toByteArray()} method isn't quite what we often
-     * need: it appends a
-     * leading zero to indicate that the number is positive and may need padding.
-     *
-     * @param b        the integer to format into a byte array
-     * @param numBytes the desired size of the resulting byte array
-     * @return numBytes byte long array.
+     * need: it appends a leading zero to indicate that the number is positive and may need padding.
      */
     public static byte[] bigIntegerToBytes(BigInteger b, int numBytes) {
         if (b == null) {

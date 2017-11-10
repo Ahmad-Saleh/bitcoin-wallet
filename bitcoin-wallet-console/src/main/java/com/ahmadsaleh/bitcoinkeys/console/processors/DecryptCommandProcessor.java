@@ -25,7 +25,7 @@ public class DecryptCommandProcessor implements CommandProcessor {
             char[] password = ConsoleUtils.requestPassword();
 
             PrivateKeyBag privateKeyBag = new PrivateKeyBag(keyOption.getArguments(), password);
-            System.out.printf("private key: %s", new DecryptPrivateUseCase().exeute(privateKeyBag));
+            System.out.printf("private key: %s", new String(new DecryptPrivateUseCase().exeute(privateKeyBag)));
         } catch (DecryptPrivateUseCase.DecryptionFailureException e) {
             System.err.println("failed to decrypt key. Key and/or password are invalid");
         }

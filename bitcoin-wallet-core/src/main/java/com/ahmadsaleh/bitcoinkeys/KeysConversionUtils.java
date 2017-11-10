@@ -1,6 +1,7 @@
 package com.ahmadsaleh.bitcoinkeys;
 
 import com.ahmadsaleh.bitcoinkeys.writer.BitcoinAddressWriter;
+import com.ahmadsaleh.bitcoinkeys.writer.WalletImportFormatWriter;
 import org.bitcoinj.core.AddressFormatException;
 import org.bitcoinj.core.Base58;
 import org.bouncycastle.asn1.x9.X9ECParameters;
@@ -18,6 +19,7 @@ import org.spongycastle.crypto.params.ECDomainParameters;
 import org.spongycastle.math.ec.FixedPointUtil;
 
 import java.io.ByteArrayOutputStream;
+import java.io.CharArrayWriter;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.math.BigInteger;
@@ -28,11 +30,7 @@ import java.security.spec.ECPrivateKeySpec;
 import java.security.spec.ECPublicKeySpec;
 import java.security.spec.InvalidKeySpecException;
 
-import static com.ahmadsaleh.bitcoinkeys.ByteArrayUtils.addToStart;
 import static com.ahmadsaleh.bitcoinkeys.ByteArrayUtils.bigIntegerToBytes;
-import static com.ahmadsaleh.bitcoinkeys.ByteArrayUtils.copyOfRange;
-import static com.ahmadsaleh.bitcoinkeys.HashingUtils.sha256Hash;
-import static com.google.common.primitives.Bytes.concat;
 
 /**
  * Created by Ahmad Y. Saleh on 7/19/17.
@@ -115,7 +113,6 @@ public final class KeysConversionUtils {
     }
 
     public static class KeyConversionException extends RuntimeException {
-
         public KeyConversionException(String message, Throwable t) {
             super(message, t);
         }
@@ -139,6 +136,17 @@ public final class KeysConversionUtils {
             return KeysConversionUtils.asPrivateKey(trimmedBytes);
         } catch (AddressFormatException e) {
             throw new KeyConversionException("Error while converting key!", e);
+        }
+    }
+
+    public static char[] toWalletImportFormat(PrivateKey privateKey) {
+        try (CharArrayWriter writer = new CharArrayWriter();
+             WalletImportFormatWriter wifWriter = new WalletImportFormatWriter(writer);) {
+            wifWriter.write(privateKey);
+            wifWriter.flush();
+            return writer.toCharArray();
+        } catch (IOException e) {
+            throw new KeyConversionException("Error while converting private key to WIF!", e);
         }
     }
 }
