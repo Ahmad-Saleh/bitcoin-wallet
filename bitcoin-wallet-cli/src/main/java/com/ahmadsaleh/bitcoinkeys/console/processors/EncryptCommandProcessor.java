@@ -25,7 +25,7 @@ public class EncryptCommandProcessor implements CommandProcessor {
         }
 
         try {
-            char[] password = ConsoleUtils.requestPassword();
+            char[] password = ConsoleUtils.requestNewPassword();
 
             byte[] privateKey = KeysConversionUtils.fromWalletImportFormat(keyOption.getArguments());
             PrivateKeyBag privateKeyBag = new PrivateKeyBag(privateKey, password);
