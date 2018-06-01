@@ -2,20 +2,20 @@ package com.ahmadsaleh.bitcoinkeys.usecases.to;
 
 public class PrivateKeyBag {
 
-    private String encryptedPrivateKey;
+    private byte[] privateKey;
     private char[] password;
 
-    public PrivateKeyBag(String encryptedPrivateKey, char[] password) {
-        this.encryptedPrivateKey = encryptedPrivateKey;
+    public PrivateKeyBag(byte[] privateKey, char[] password) {
+        this.privateKey = privateKey;
         this.password = password;
     }
 
-    public String getEncryptedPrivateKey() {
-        return encryptedPrivateKey;
+    public byte[] getPrivateKey() {
+        return privateKey;
     }
 
-    public void setEncryptedPrivateKey(String encryptedPrivateKey) {
-        this.encryptedPrivateKey = encryptedPrivateKey;
+    public void setPlainPrivateKey(byte[] privateKey) {
+        this.privateKey = privateKey;
     }
 
     public char[] getPassword() {

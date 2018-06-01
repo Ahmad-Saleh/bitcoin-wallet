@@ -31,6 +31,7 @@ import java.security.spec.ECPublicKeySpec;
 import java.security.spec.InvalidKeySpecException;
 
 import static com.ahmadsaleh.bitcoinkeys.ByteArrayUtils.bigIntegerToBytes;
+import static com.ahmadsaleh.bitcoinkeys.ByteArrayUtils.copyOfRange;
 
 /**
  * Created by Ahmad Y. Saleh on 7/19/17.
@@ -136,6 +137,15 @@ public final class KeysConversionUtils {
             return KeysConversionUtils.asPrivateKey(trimmedBytes);
         } catch (AddressFormatException e) {
             throw new KeyConversionException("Error while converting key!", e);
+        }
+    }
+
+    public static byte[] fromWalletImportFormat(String wif) {
+        try {
+            byte[] decoded = Base58.decode(wif);
+            return copyOfRange(decoded, 1, decoded.length - 4);
+        } catch (AddressFormatException e) {
+            throw new KeyConversionException("Error while converting WIF to bytes!", e);
         }
     }
 

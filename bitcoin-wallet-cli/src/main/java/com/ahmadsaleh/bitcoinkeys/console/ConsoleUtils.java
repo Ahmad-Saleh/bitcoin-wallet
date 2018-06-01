@@ -25,7 +25,9 @@ public class ConsoleUtils {
 
     private static char[] readPassword(String message) {
         if (System.console() == null) {
-            System.out.println(message + " (password will be visible)");
+            System.out.println("WARNING: password will be visible");
+            System.out.println("Are you running this program from an IDE? try to run this program from an external console.");
+            System.out.println(message);
             return new Scanner(System.in).nextLine().toCharArray();
         } else {
             return System.console().readPassword(message);

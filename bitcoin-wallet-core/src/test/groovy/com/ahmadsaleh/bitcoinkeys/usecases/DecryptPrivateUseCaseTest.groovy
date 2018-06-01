@@ -1,6 +1,6 @@
 package com.ahmadsaleh.bitcoinkeys.usecases
 
-import com.ahmadsaleh.bitcoinkeys.usecases.to.PrivateKeyBag
+import com.ahmadsaleh.bitcoinkeys.usecases.to.EncryptedPrivateKeyBag
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -10,10 +10,10 @@ class DecryptPrivateUseCaseTest extends Specification {
     def "given a private key and a valid password, when decrypting the key, then return correct private"() {
         setup:
         def decryptPrivateUseCase = new DecryptPrivateUseCase()
-        def privateKeyBag = new PrivateKeyBag(encryptedPrivate, password.toCharArray())
+        def privateKeyBag = new EncryptedPrivateKeyBag(encryptedPrivate, password.toCharArray())
 
         when:
-        def resultedAddress = decryptPrivateUseCase.exeute(privateKeyBag)
+        def resultedAddress = decryptPrivateUseCase.execute(privateKeyBag)
 
         then:
         expectedPrivate.equals resultedAddress.toString()
@@ -30,10 +30,10 @@ class DecryptPrivateUseCaseTest extends Specification {
     def "given a private key and an invalid password, when decrypting the key, then InvalidPasswordException should be thrown"() {
         setup:
         def decryptPrivateUseCase = new DecryptPrivateUseCase()
-        def privateKeyBag = new PrivateKeyBag(encryptedPrivate, password.toCharArray())
+        def privateKeyBag = new EncryptedPrivateKeyBag(encryptedPrivate, password.toCharArray())
 
         when:
-        decryptPrivateUseCase.exeute(privateKeyBag)
+        decryptPrivateUseCase.execute(privateKeyBag)
 
         then:
         thrown(DecryptPrivateUseCase.InvalidPasswordException.class)
@@ -50,10 +50,10 @@ class DecryptPrivateUseCaseTest extends Specification {
     def "given an invalid private key and a password, when decrypting the key, then DecryptionFailureException should be thrown"() {
         setup:
         def decryptPrivateUseCase = new DecryptPrivateUseCase()
-        def privateKeyBag = new PrivateKeyBag(encryptedPrivate, password.toCharArray())
+        def privateKeyBag = new EncryptedPrivateKeyBag(encryptedPrivate, password.toCharArray())
 
         when:
-        decryptPrivateUseCase.exeute(privateKeyBag)
+        decryptPrivateUseCase.execute(privateKeyBag)
 
         then:
         thrown(DecryptPrivateUseCase.DecryptionFailureException.class)

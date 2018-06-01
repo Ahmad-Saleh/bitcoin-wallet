@@ -1,7 +1,7 @@
 package com.ahmadsaleh.bitcoinkeys.writer
 
 import com.ahmadsaleh.bitcoinkeys.KeysConversionUtils
-import com.ahmadsaleh.bitcoinkeys.writer.WalletImportFormatWriter
+
 import spock.lang.Specification
 import spock.lang.Unroll
 

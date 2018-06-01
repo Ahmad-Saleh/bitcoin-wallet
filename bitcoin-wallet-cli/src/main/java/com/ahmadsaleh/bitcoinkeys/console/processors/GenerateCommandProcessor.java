@@ -13,7 +13,7 @@ public class GenerateCommandProcessor implements CommandProcessor {
     @Override
     public void process(List<CommandOption> options) {
         char[] password = ConsoleUtils.requestNewPassword();
-        BitcoinKeyPair keyPair = new GenerateKeysUseCase().exeute(password);
+        BitcoinKeyPair keyPair = new GenerateKeysUseCase().execute(password);
         System.out.printf("bitcoin address: %s\n", keyPair.getPublicBitcoinAddress());
         System.out.printf("encrypted private: %s\n", keyPair.getEncryptedPrivate());
     }

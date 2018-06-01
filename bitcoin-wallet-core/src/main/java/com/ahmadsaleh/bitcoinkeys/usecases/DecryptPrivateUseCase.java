@@ -1,22 +1,22 @@
 package com.ahmadsaleh.bitcoinkeys.usecases;
 
-import com.ahmadsaleh.bitcoinkeys.usecases.to.PrivateKeyBag;
+import com.ahmadsaleh.bitcoinkeys.usecases.to.EncryptedPrivateKeyBag;
 import org.bitcoinj.core.AddressFormatException;
 import org.bitcoinj.core.ECKey;
 import org.bitcoinj.crypto.BIP38PrivateKey;
 import org.bitcoinj.params.MainNetParams;
 
-public class DecryptPrivateUseCase implements UseCase<PrivateKeyBag, char[]> {
+public class DecryptPrivateUseCase implements UseCase<EncryptedPrivateKeyBag, char[]> {
 
     @Override
-    public char[] exeute(PrivateKeyBag privateKeyBag) {
+    public char[] execute(EncryptedPrivateKeyBag encryptedPrivateKeyBag) {
         try {
             /**
              * bitcoinj uses Strings for passphrases, which is a security risk
              * (see https://github.com/bitcoinj/bitcoinj/issues/1456)
              */
-            BIP38PrivateKey bip38PrivateKey = new BIP38PrivateKey(MainNetParams.get(), privateKeyBag.getEncryptedPrivateKey());
-            ECKey ecKey = bip38PrivateKey.decrypt(new String(privateKeyBag.getPassword()));
+            BIP38PrivateKey bip38PrivateKey = new BIP38PrivateKey(MainNetParams.get(), encryptedPrivateKeyBag.getEncryptedPrivateKey());
+            ECKey ecKey = bip38PrivateKey.decrypt(new String(encryptedPrivateKeyBag.getPassword()));
             return ecKey.getPrivateKeyEncoded(MainNetParams.get()).toString().toCharArray();
         } catch (AddressFormatException e) {
             throw new DecryptionFailureException("failed to decrypt key", e);

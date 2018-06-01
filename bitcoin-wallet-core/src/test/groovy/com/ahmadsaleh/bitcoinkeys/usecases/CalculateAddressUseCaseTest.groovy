@@ -1,6 +1,6 @@
 package com.ahmadsaleh.bitcoinkeys.usecases
 
-import com.ahmadsaleh.bitcoinkeys.usecases.to.PrivateKeyBag
+import com.ahmadsaleh.bitcoinkeys.usecases.to.EncryptedPrivateKeyBag
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -10,10 +10,10 @@ class CalculateAddressUseCaseTest extends Specification {
     def "given a private key and a valid password, when calculating public address, then return correct address"() {
         setup:
         def calculateAddressUseCase = new CalculateAddressUseCase()
-        def privateKeyBag = new PrivateKeyBag(encryptedPrivate, password.toCharArray())
+        def privateKeyBag = new EncryptedPrivateKeyBag(encryptedPrivate, password.toCharArray())
 
         when:
-        def resultedAddress = calculateAddressUseCase.exeute(privateKeyBag)
+        def resultedAddress = calculateAddressUseCase.execute(privateKeyBag)
 
         then:
         expectedAddress.equals resultedAddress
@@ -30,10 +30,10 @@ class CalculateAddressUseCaseTest extends Specification {
     def "given a private key and an invalid password, when calculating public address, then InvalidPasswordException should be thrown"() {
         setup:
         def calculateAddressUseCase = new CalculateAddressUseCase()
-        def privateKeyBag = new PrivateKeyBag(encryptedPrivate, password.toCharArray())
+        def privateKeyBag = new EncryptedPrivateKeyBag(encryptedPrivate, password.toCharArray())
 
         when:
-        calculateAddressUseCase.exeute(privateKeyBag)
+        calculateAddressUseCase.execute(privateKeyBag)
 
         then:
         thrown(DecryptPrivateUseCase.InvalidPasswordException.class)
@@ -50,10 +50,10 @@ class CalculateAddressUseCaseTest extends Specification {
     def "given an invalid private key and a password, when calculating public address, then DecryptionFailureException should be thrown"() {
         setup:
         def calculateAddressUseCase = new CalculateAddressUseCase()
-        def privateKeyBag = new PrivateKeyBag(encryptedPrivate, password.toCharArray())
+        def privateKeyBag = new EncryptedPrivateKeyBag(encryptedPrivate, password.toCharArray())
 
         when:
-        calculateAddressUseCase.exeute(privateKeyBag)
+        calculateAddressUseCase.execute(privateKeyBag)
 
         then:
         thrown(DecryptPrivateUseCase.DecryptionFailureException.class)

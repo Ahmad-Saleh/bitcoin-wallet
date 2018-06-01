@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bitcoin-wallet-console</artifactId>
+    <artifactId>bitcoin-wallet-cli</artifactId>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>

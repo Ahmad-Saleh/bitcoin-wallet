@@ -1,6 +1,6 @@
 package com.ahmadsaleh.bitcoinkeys.usecases
 
-import com.ahmadsaleh.bitcoinkeys.usecases.to.PrivateKeyBag
+import com.ahmadsaleh.bitcoinkeys.usecases.to.EncryptedPrivateKeyBag
 import spock.lang.Specification
 import spock.lang.Unroll
 
@@ -14,9 +14,9 @@ class GenerateKeysUseCaseTest extends Specification {
         def generateKeysUseCase = new GenerateKeysUseCase()
 
         when:
-        def bitcoinKeyPair = generateKeysUseCase.exeute(password.toCharArray())
+        def bitcoinKeyPair = generateKeysUseCase.execute(password.toCharArray())
 
-        def calculatedPublic = new CalculateAddressUseCase().exeute(new PrivateKeyBag(bitcoinKeyPair.getEncryptedPrivate(), password.toCharArray()))
+        def calculatedPublic = new CalculateAddressUseCase().execute(new EncryptedPrivateKeyBag(bitcoinKeyPair.getEncryptedPrivate(), password.toCharArray()))
         then:
         calculatedPublic.equals bitcoinKeyPair.publicBitcoinAddress
 

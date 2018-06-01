@@ -1,14 +1,17 @@
 package com.ahmadsaleh.bitcoinkeys.console.processors;
 
+import com.ahmadsaleh.bitcoinkeys.KeysConversionUtils;
 import com.ahmadsaleh.bitcoinkeys.console.CommandOption;
 import com.ahmadsaleh.bitcoinkeys.console.CommandProcessor;
 import com.ahmadsaleh.bitcoinkeys.console.ConsoleUtils;
 import com.ahmadsaleh.bitcoinkeys.usecases.DecryptPrivateUseCase;
+import com.ahmadsaleh.bitcoinkeys.usecases.EncryptPrivateUseCase;
+import com.ahmadsaleh.bitcoinkeys.usecases.to.EncryptedPrivateKeyBag;
 import com.ahmadsaleh.bitcoinkeys.usecases.to.PrivateKeyBag;
 
 import java.util.List;
 
-public class DecryptCommandProcessor implements CommandProcessor {
+public class EncryptCommandProcessor implements CommandProcessor {
     @Override
     public void process(List<CommandOption> options) {
         if (options.size() != 1) {
@@ -24,15 +27,16 @@ public class DecryptCommandProcessor implements CommandProcessor {
         try {
             char[] password = ConsoleUtils.requestPassword();
 
-            PrivateKeyBag privateKeyBag = new PrivateKeyBag(keyOption.getArguments(), password);
-            System.out.printf("private key: %s", new String(new DecryptPrivateUseCase().exeute(privateKeyBag)));
-        } catch (DecryptPrivateUseCase.DecryptionFailureException e) {
-            System.err.println("failed to decrypt key. Key and/or password are invalid");
+            byte[] privateKey = KeysConversionUtils.fromWalletImportFormat(keyOption.getArguments());
+            PrivateKeyBag privateKeyBag = new PrivateKeyBag(privateKey, password);
+            System.out.printf("encrypted private key: %s", new EncryptPrivateUseCase().execute(privateKeyBag));
+        } catch (EncryptPrivateUseCase.KeyEncryptionException e) {
+            System.err.println("failed to encrypt key. Key and/or password are invalid");
         }
     }
 
     @Override
     public String getCommand() {
-        return "decrypt";
+        return "encrypt";
     }
 }

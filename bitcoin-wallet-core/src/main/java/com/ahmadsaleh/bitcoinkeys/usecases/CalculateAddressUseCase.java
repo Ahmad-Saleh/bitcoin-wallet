@@ -1,22 +1,16 @@
 package com.ahmadsaleh.bitcoinkeys.usecases;
 
 import com.ahmadsaleh.bitcoinkeys.KeysConversionUtils;
-import com.ahmadsaleh.bitcoinkeys.usecases.to.PrivateKeyBag;
-import org.spongycastle.asn1.x9.X9ECParameters;
-import org.spongycastle.crypto.ec.CustomNamedCurves;
-import org.spongycastle.crypto.params.ECDomainParameters;
-import org.spongycastle.math.ec.ECPoint;
-import org.spongycastle.math.ec.FixedPointUtil;
+import com.ahmadsaleh.bitcoinkeys.usecases.to.EncryptedPrivateKeyBag;
 
-import java.math.BigInteger;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
-public class CalculateAddressUseCase implements UseCase<PrivateKeyBag, String> {
+public class CalculateAddressUseCase implements UseCase<EncryptedPrivateKeyBag, String> {
 
     @Override
-    public String exeute(PrivateKeyBag privateKeyBag) {
-        char[] decrypt = new DecryptPrivateUseCase().exeute(privateKeyBag);
+    public String execute(EncryptedPrivateKeyBag encryptedPrivateKeyBag) {
+        char[] decrypt = new DecryptPrivateUseCase().execute(encryptedPrivateKeyBag);
         return calculateAddress(decrypt);
     }
 

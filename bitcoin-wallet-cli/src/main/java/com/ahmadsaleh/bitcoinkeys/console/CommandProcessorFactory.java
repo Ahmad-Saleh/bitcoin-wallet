@@ -16,6 +16,7 @@ public class CommandProcessorFactory {
         registerProcessor(new EmptyCommandProcessor());
         registerProcessor(new DecryptCommandProcessor());
         registerProcessor(new CalculateAddressCommandProcessor());
+        registerProcessor(new EncryptCommandProcessor());
     }
 
     private CommandProcessorFactory() {

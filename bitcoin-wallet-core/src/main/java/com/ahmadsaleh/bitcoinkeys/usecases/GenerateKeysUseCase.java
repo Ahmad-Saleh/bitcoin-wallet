@@ -13,7 +13,7 @@ import java.security.KeyPair;
 public class GenerateKeysUseCase implements UseCase<char[], BitcoinKeyPair> {
 
     @Override
-    public BitcoinKeyPair exeute(char[] password) {
+    public BitcoinKeyPair execute(char[] password) {
         try {
             KeyPair keyPair = ECDSAEncryptionUtils.generateKeyPair();
             String bitcoinAddress = KeysConversionUtils.toBitcoinAddress(keyPair.getPublic());
