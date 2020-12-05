@@ -1,5 +1,7 @@
 # Bitcoin Wallet 
 
+A secure, simple and easy to understand bitcoin addresses management tool
+
 Supports the following:
 * generating a new bitcoin addresses
 * encrypting private keys using [BIP-38](https://github.com/bitcoin/bips/blob/master/bip-0038.mediawiki)
