@@ -23,4 +23,8 @@ public class UnrecognizedCommadProcessor implements CommandProcessor {
         throw new UnsupportedOperationException("This should not be called! This is a Null Object Pattern " +
                 "and there is no specific command is attached to this processor");
     }
+
+    @Override
+    public void printHelp() {
+    }
 }

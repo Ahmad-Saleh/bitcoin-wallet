@@ -1,4 +1,4 @@
-package com.ahmadsaleh.bitcoinkeys.console;
+package com.ahmadsaleh.bitcoinkeys.console.utils;
 
 
 import java.util.Arrays;

@@ -14,4 +14,8 @@ public class EmptyCommandProcessor implements CommandProcessor {
     public String getCommand() {
         return "";
     }
+
+    @Override
+    public void printHelp() {
+    }
 }

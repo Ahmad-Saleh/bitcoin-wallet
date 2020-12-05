@@ -1,5 +1,6 @@
 package com.ahmadsaleh.bitcoinkeys.console;
 
+import com.ahmadsaleh.bitcoinkeys.console.utils.Color;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
@@ -12,6 +13,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        printIntro();
+
         Scanner scanner = new Scanner(System.in);
         while (true) {
             try {
@@ -49,7 +52,20 @@ public class Main {
         return optionList;
     }
 
+    private static void printIntro() {
+        System.out.print(Color.MAGENTA);
+        System.out.println("  ___   _   _                _           __      __         _   _         _   \n" +
+                " | _ ) (_) | |_   __   ___  (_)  _ _     \\ \\    / /  __ _  | | | |  ___  | |_ \n" +
+                " | _ \\ | | |  _| / _| / _ \\ | | | ' \\     \\ \\/\\/ /  / _` | | | | | / -_) |  _|\n" +
+                " |___/ |_|  \\__| \\__| \\___/ |_| |_||_|     \\_/\\_/   \\__,_| |_| |_| \\___|  \\__|\n");
+
+        System.out.print(Color.RESET);
+        System.out.println("\nAvailable commands:\n");
+        CommandProcessorFactory.getFactory().getAllProcessors().stream().forEach(p -> p.printHelp());
+    }
+
     private static class InvalidCommandStructureException extends RuntimeException {
+
         public InvalidCommandStructureException(String message) {
             super(message);
         }

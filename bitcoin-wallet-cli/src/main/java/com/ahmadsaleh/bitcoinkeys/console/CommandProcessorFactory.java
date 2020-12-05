@@ -2,6 +2,7 @@ package com.ahmadsaleh.bitcoinkeys.console;
 
 import com.ahmadsaleh.bitcoinkeys.console.processors.*;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -36,5 +37,9 @@ public class CommandProcessorFactory {
         }
 
         return processorMap.get(command);
+    }
+
+    public Collection<CommandProcessor> getAllProcessors() {
+        return processorMap.values();
     }
 }

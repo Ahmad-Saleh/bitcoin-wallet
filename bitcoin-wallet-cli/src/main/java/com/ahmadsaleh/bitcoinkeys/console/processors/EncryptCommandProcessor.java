@@ -3,10 +3,9 @@ package com.ahmadsaleh.bitcoinkeys.console.processors;
 import com.ahmadsaleh.bitcoinkeys.KeysConversionUtils;
 import com.ahmadsaleh.bitcoinkeys.console.CommandOption;
 import com.ahmadsaleh.bitcoinkeys.console.CommandProcessor;
-import com.ahmadsaleh.bitcoinkeys.console.ConsoleUtils;
-import com.ahmadsaleh.bitcoinkeys.usecases.DecryptPrivateUseCase;
+import com.ahmadsaleh.bitcoinkeys.console.utils.Color;
+import com.ahmadsaleh.bitcoinkeys.console.utils.ConsoleUtils;
 import com.ahmadsaleh.bitcoinkeys.usecases.EncryptPrivateUseCase;
-import com.ahmadsaleh.bitcoinkeys.usecases.to.EncryptedPrivateKeyBag;
 import com.ahmadsaleh.bitcoinkeys.usecases.to.PrivateKeyBag;
 
 import java.util.List;
@@ -38,5 +37,20 @@ public class EncryptCommandProcessor implements CommandProcessor {
     @Override
     public String getCommand() {
         return "encrypt";
+    }
+
+    @Override
+    public void printHelp() {
+        System.out.print(Color.CYAN);
+        System.out.print("encrypt -key ");
+        System.out.print(Color.RESET);
+        System.out.print(Color.YELLOW);
+        System.out.print("[private key]");
+        System.out.print(Color.RESET);
+        System.out.print(": encrypts a bitcoin private key using BIP-38.\n\t\texample: ");
+        System.out.print(Color.CYAN);
+        System.out.print("encrypt -key 5J3SDGJty2TfAm6yKe8vPAPwF7EVsG4SpZMUNbtPhg4mTdAAaDP");
+        System.out.print(Color.RESET);
+        System.out.println();
     }
 }
